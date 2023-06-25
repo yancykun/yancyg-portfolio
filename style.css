@@ -1,0 +1,424 @@
+:root {
+  --clr-background: #010922;
+  --clr-primary: #8080D7;
+  --clr-secondary: #AAD9D9;
+  --clr-neutral: #ffffff;
+
+  --ff-primary: 'Inter', sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-500: 0.875rem;
+  --fs-600: 1rem;
+  --fs-700: 1.25rem;
+  --fs-800: 1.5rem;
+  --fs-900: 3rem;
+}
+
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul,
+ol,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  font-family: var(--ff-primary);
+  background: var(--clr-background);
+  color: var(--clr-neutral);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 90px 80px;
+  display: flex;
+  gap: 2rem;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the body element */
+body {
+  animation: fade-in 1s ease-in-out;
+}
+
+.left-column {
+  position: fixed;
+  max-width: 50%;
+  overflow-y: auto;
+  padding-right: 2rem;
+}
+
+h1 {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary);
+}
+
+h3 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
+  color: var(--clr-secondary);
+  padding: 1.5rem 0;
+}
+
+.left-column p {
+  width: 368px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  padding: 3rem 0 2rem 0;
+}
+
+.navbar li{
+  padding: 0.5rem 0;
+}
+
+.navbar li a {
+  color: var(--clr-neutral);
+}
+
+.navbar li a.active::before {
+  width: 100%;
+}
+
+.underline-hover-effect {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.navbar .underline-hover-effect.active::before {
+  width: 100%;
+}
+
+.underline-hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 255, 0);
+  transition: width 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::before
+{
+  width: 100%;
+}
+
+.links a {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.links a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.right-column {
+  margin-left: 50%;
+  max-width: 50%;
+  overflow-y: auto;
+}
+
+.about {
+  margin-bottom: 4rem;
+}
+
+.about h3 {
+  display: none;
+}
+
+.about p {
+  margin-bottom: var(--fs-700);
+}
+
+.about .profile {
+  padding-top: 2rem;
+  max-height: 400px;
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.technology-list li{
+  border: 1px solid var(--clr-secondary);
+  border-radius: 5px;
+  padding: .875rem 1.875rem;
+}
+
+.project {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-container li{
+  padding-bottom: 2rem;
+}
+
+.project .project-img {
+  max-width: 200px;
+}
+
+.project-info h4 {
+  font-size: var(--fs-700);
+  color: var(--clr-primary);
+  padding-bottom: .5rem;
+}
+
+.project-link {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: .5rem;
+}
+
+.project-link a{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.project-link a span{
+  color: var(--clr-neutral);
+}
+
+.project-link img {
+  width: 26px;
+  height: 24px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: .5rem;
+}
+
+.category li{
+  border: 1px solid var(--clr-secondary);
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.contact div{
+  display: flex;
+  gap: 3rem;
+}
+
+.contact h3 {
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.contact div a {
+  color: var(--clr-neutral);
+  margin-top: 4rem;
+  border-left: 3px solid var(--clr-secondary);
+  padding-left: 1rem;
+}
+
+footer {
+  margin-top: 5rem;
+  color: var(--clr-secondary);
+}
+
+
+@media (max-width: 1060px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .left-column,
+  .right-column {
+    position: static;
+    max-width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .left-column p {
+    margin-bottom: 2rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .left-column {
+    margin-bottom: 5rem;
+  }
+
+  .right-column {
+    height: auto;
+  }
+
+  .right-column .about {
+    margin-bottom: 5rem;
+  }
+
+  .about h3 {
+    display: block;
+    padding: 0 0 1rem 0;
+  }
+
+  .technology {
+    margin-bottom: 5rem;
+  }
+
+  .technology h3 {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .technology-list {
+    padding: 0;
+  }
+
+  .project {
+    display: flex;
+  }
+
+  .project-container li {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .project-container h3 {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .project .project-img {
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .project-info h4 {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .project-info .project-link {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .project-info p {
+    margin-bottom: 1rem;
+  }
+
+  .project-info .category li {
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .contact h3 {
+    padding: 0;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project {
+    flex-direction: column-reverse;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 2rem 3rem;
+  }
+
+  .left-column h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 512px) {
+  footer p {
+    font-size: var(--fs-500);
+  }
+}
+
+  @media (max-width: 450px) {
+    .left-column h1 {
+      font-size: 2rem;
+    }
+  }
+
+@media (max-width: 390px) {
+  .container {
+    margin-left: 1rem;
+  }
+  .left-column h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    margin-left: 5rem;
+  }
+  .left-column h1 {
+    font-size: 1.25rem;
+  }
+}
+
+

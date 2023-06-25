@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Yancy Garret</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="left-column">
+        <h1>Yancy Garret Saac</h1>
+        <h3>Front-end developer</h3>
+        <p>I specialize in crafting interactive and responsive websites both web and mobile platforms.</p>
+        <ul class="navbar">
+          <li><a class="underline-hover-effect active" href="#about-section" onclick="smoothScroll(event, 'about-section')">about</a></li>
+          <li><a class="underline-hover-effect" href="#technologies-section" onclick="smoothScroll(event, 'technologies-section')">technologies</a></li>
+          <li><a class="underline-hover-effect" href="#projects-section" onclick="smoothScroll(event, 'projects-section')">projects</a></li>
+          <li><a class="underline-hover-effect" href="#contact-section" onclick="smoothScroll(event, 'contact-section')">contact</a></li>
+        </ul>        
+        <section class="links">
+          <a href="https://www.instagram.com/yancykun.dev"><img src="images/instagram-167-svgrepo-com.svg" alt="instagram"></a>
+          <a href="mailto:yancygarret12@gmail.com"><img src="images/email-1573-svgrepo-com.svg" alt="email"></a>
+          <a href="https://www.linkedin.com/in/yancygarret/"><img src="images/linkedin-svgrepo-com.svg" alt="linkedin"></a>
+          <a href="https://github.com/yancykun"><img src="images/github-142-svgrepo-com.svg" alt="github"></a>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section class="about">
+          <h3>About</h3>
+          <p id="about-section">I am a Computer Science graduate from the University of Southern Mindanao, with a Bachelor's degree in the field. Throughout my academic career, I have honed my problem-solving skills. When I was in my third year of college, I made the decision to learn web development. So, I took the initiative to learn independently by following roadmaps, enrolling in online courses, and watching YouTube tutorials.</p>
+          <p>I dedicated more than 10 hours a day to coding and improving my skills. As a result, I have acquired a decent understanding of the powerful trio of HTML, CSS, and JavaScript and have started exploring additional libraries such as Tailwind CSS and React JS.</p>
+          <p>Presently, my primary focus is on building interactive, responsive, and elegant websites for both web and mobile platforms. I maintain an unwavering curiosity and love for learning new things. I take great pride in delivering high-quality work and am committed to meeting deadlines. Despite my limited experience and skills, I approach each challenge with confidence and believe that I can make valuable contributions to any team.</p>
+          <img class="profile" src="images/profile.jpg" alt="profile picture">
+        </section>
+
+        <section class="technology" >
+          <h3 id="technologies-section">Technologies</h3>
+          <ul class="technology-list">
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+            <li>Git</li>
+            <li>Github</li>
+            <li>Figma</li>
+          </ul>
+        </section>
+
+        <section class="project-container" id="projects-section">
+          <h3>Projects</h3>
+          <ol>
+            <li>
+              <div class="project">
+                <div class="project-img">
+                  <img src="images/Screenshot 2023-06-21 233609.png" alt="">
+                </div>
+                <div class="project-info">
+                  <h4>Manage</h4>
+                  <div class="project-link">
+                    <a href="https://github.com/yancykun/Front-end-mentor-challenge">
+                      <span>Github</span>
+                      <img src="images/github-142-svgrepo-com.svg" alt="">
+                    </img>
+                    <a href="https://stunning-creponne-6df821.netlify.app/">
+                      <span>Link</span>
+                      <img src="images/link-external-svgrepo-com.svg" alt="">
+                    </a>
+                  </div>
+                  <p>Manage landing page from front-end mentor challenge.</p>
+                  <ul class="category">
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                    <li>Challenge</li>
+                    <li>Front-end mentor</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="project">
+                <div class="project-img">
+                  <img src="images/Screenshot 2023-06-24 002411.png" alt="">
+                </div>
+                <div class="project-info">
+                  <h4>Loruki platform</h4>
+                  <div class="project-link">
+                    <a href="https://github.com/yancykun/Luroki_platform">
+                      <span>Github</span>
+                      <img src="images/github-142-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="https://yncy-test.netlify.app/">
+                      <span>Link</span>
+                      <img src="images/link-external-svgrepo-com.svg" alt="">
+                    </a>
+                  </div>
+                  <p>Cloning loruki platform landing page to practice my front-end skills.</p>
+                  <ul class="category">
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                    <li>Figma</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project">
+                <div class="project-img">
+                  <img src="images/Screenshot 2023-06-25 141907.png" alt="">
+                </div>
+                <div class="project-info">
+                  <h4>Engineering Office</h4>
+                  <div class="project-link">
+                    <a href="https://github.com/yancykun/engineering-office">
+                      <span>Github</span>
+                      <img src="images/github-142-svgrepo-com.svg" alt="">
+                    </a>
+                    <a href="https://96be50db.engineering-office.pages.dev/#">
+                      <span>Link</span>
+                      <img src="images/link-external-svgrepo-com.svg" alt="">
+                    </a>
+                  </div>
+                  <p>Designed and developed the whole web application.</p>
+                  <ul class="category">
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+                    <li>Figma</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+          </ol>
+        </section>
+
+          <section class="contact" id="contact-section">
+            <h3>Get in touch</h3>
+            <p>I am willing to engage in conversations regarding potential positions, collaborations, or any other professional prospects. Please feel free to reach out to me using the provided email. I value your time and consideration and eagerly anticipate the opportunity to work together. Thank you!</p>
+            <div>
+              <a class="underline-hover-effect" href="mailto:yancygarret12@gmail.com">Say Hello</a>
+              <a class="underline-hover-effect" href="">View Resume</a>
+            </div>
+          </section>
+
+        <footer>
+          <p>Built by <a class="underline-hover-effect" href="https://github.com/yancykun">Yancy Garret Saac</a> © 2023. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+</html>
